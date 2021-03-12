@@ -21,7 +21,7 @@
       p {
       margin: 0 0 5px;
       }
-      .main-block {
+      .main-block,.fa-credit-card {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -37,7 +37,7 @@
       }
       .fas {
       margin: 25px 10px 0;
-      font-size: 72px;
+      font-size: 272px;
       color: #fff;
       }
       .fa-envelope {
@@ -56,7 +56,7 @@
       input::placeholder {
       color: #666;
       }
-      button {
+      .button {
       width: 100%;
       padding: 10px;
       border: none;
@@ -65,7 +65,7 @@
       font-weight: 400;
       color: #fff;
       }
-      button:hover {
+      .button:hover {
       background: #6e7c7c;
       }
       @media (min-width: 568px) {
@@ -93,9 +93,7 @@
   <body>
     <div class="main-block">
       <div class="left-part">
-        <i class="fas fa-envelope"></i>
-        <i class="fas fa-at"></i>
-        <i class="fas fa-mail-bulk"></i>
+        <i class="fas fa fa-credit-card"></i>
       </div>
       <form action="/">
         <h1>Enter Transaction Details</h1>
@@ -106,7 +104,7 @@
           <input type="text" name="name" placeholder="Enter p">
           <input type="text" name="name" placeholder="Enter q">
         </div>
-        <button type="submit" href="/">Submit</button>
+          <a type="button" class="button" href="cc.html">Submit</a>
       </form>
     </div>
   </body>
