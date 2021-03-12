@@ -1,13 +1,117 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Customer Segmentation</title>
-    <link rel="stylesheet" href="stylescs.css">
+    <title>Anamoly Detection</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      }
+      h1 {
+      margin: 0 0 20px;
+      font-weight: 400;
+      color: #6e7c7c;
+      }
+      p {
+      margin: 0 0 5px;
+      }
+      .main-block,.fa-credit-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #6e7c7c;
+      }
+      form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #f5f5f5;
+      background: #f5f5f5;
+      }
+      .fas {
+      margin: 25px 10px 0;
+      font-size: 272px;
+      color: #fff;
+      }
+      .fa-envelope {
+      transform: rotate(-20deg);
+      }
+      .fr{
+        color:white;
+        font-size:100px;
+          background-color: #6e7c7c;
+      }
+      .fa-at , .fa-mail-bulk{
+      transform: rotate(10deg);
+      }
+      input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #6e7c7c;
+      outline: none;
+      }
+      input::placeholder {
+      color: #666;
+      }
+      .button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #6e7c7c;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .button:hover {
+      background: #6e7c7c;
+      }
+      @media (min-width: 568px) {
+      .main-block {
+      flex-direction: row;
+      }
+      .left-part, form {
+      width: 50%;
+      }
+      .fa-envelope {
+      margin-top: 0;
+      margin-left: 20%;
+      }
+      .fa-at {
+      margin-top: -10%;
+      margin-left: 65%;
+      }
+      .fa-mail-bulk {
+      margin-top: 2%;
+      margin-left: 28%;
+      }
+      }
+    </style>
   </head>
   <body>
-    <div class="xx">
-      <h1>Fraud!!! </h1>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa fa-credit-card"></i>
+      </div>
+      <form action="/">
+        <h1>Enter Transaction Details</h1>
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Enter x">
+          <input type="text" name="name" placeholder="Enter y">
+          <input type="text" name="name" placeholder="Enter z">
+          <input type="text" name="name" placeholder="Enter p">
+          <input type="text" name="name" placeholder="Enter q">
+        </div>
+          <a type="button" class="button" href="cc.html">Submit</a>
+      </form>
+          <h1 class="fas fr">Fraud!!!</h1>
     </div>
   </body>
 </html>
